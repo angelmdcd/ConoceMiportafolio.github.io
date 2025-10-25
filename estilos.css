@@ -1,0 +1,149 @@
+/* Selector de tipo para que no se me olvide */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Color de fondo para toda la página */
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Centrar texto del título */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Selector de id */
+#principal {
+    background-color: #c3d0f0; /* Cambiar color de fondo del header */
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Borde inferior */
+}
+
+main {
+    padding: 20px;
+    margin: 15px; /* Margen entre secciones */
+}
+
+footer {
+    background-color: #933f3f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Margen superior */
+}
+
+
+/* Selector de clase */
+.descripcion {
+    font-style: italic;
+    color: #555;
+}
+
+/* Selector descendente */
+main p {
+    color: #444;
+}
+/* Estilos para la tarjeta de perfil */
+.tarjeta-perfil {
+    background-color: white;
+    padding: 20px; /* Espacio interior (relleno) */
+    margin: 20px auto; /* Espacio exterior y centrado */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 2000px;
+}
+
+.tarjeta-perfil h1 {
+    text-align: center;
+}
+
+
+/* Estilos para la tabla de horario */
+.horario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.horario th, .horario td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.horario thead {
+    background-color: #1588a2;
+    color: white;
+}
+
+.horario tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Colores alternos */
+}
+
+.horario tbody tr:hover {
+    background-color: #ddd; /* Efecto hover */
+}
+
+/* Estilos para la tabla de horario con características de CSS3 */
+.horario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.horario th, .horario td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumentamos un poco el padding para que se vea mejor */
+    text-align: left;
+    /* 1. Transición (transition) */
+    /* Se aplica a la transformación y al color de fondo para un efecto suave */
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+.horario thead {
+    background-color: #5ba4c1;
+    color: white;
+}
+
+.horario tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Aplicamos los efectos al pasar el mouse sobre una celda (td) */
+.horario tbody td:hover {
+    cursor: pointer;
+    /* 2. Transformación (transform) */
+    /* La celda se hará ligeramente más grande */
+    transform: scale(1.08);
+
+    /* 3. Gradiente de color (linear-gradient) */
+    /* Fondo con un gradiente suave */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white; /* Cambiamos el color del texto para que sea legible */
+    font-weight: bold;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reducir tamaño de letra base */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .tarjeta-perfil {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main {
+        margin: 5px;
+        padding: 10px;
+    }
+}
